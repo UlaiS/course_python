@@ -1,3 +1,5 @@
+import Heritage
+import os
 # #Este es mi primer if en python
 #
 # x = 5
@@ -118,14 +120,57 @@
 #
 # print("no existe nombre ") if(lista[0] == dato) else print("oki")
 
-i = 0
-while(i < 7):
-    i += 1
-    if i == 5:
-        continue
-    print(i)
+# i = 0
+# while(i < 7):
+#     i += 1
+#     if i == 5:
+#         continue
+#     print(i)
+#
+# lista = ["Ulai", "Sem", "Nava", "Campos"]
+#
+# for name in lista:
+#     if(name == "Nava"): break
+#     print(name)
+#
+# for name in lista:
+#     if(name == "Nava"): continue
+#     print(name)
 
-lista = ["Ulai", "Sem", "Nava", "Campos"]
+# for x in range(0, 30, 7):
+#     print(x)
+# else: print("Se acabo!")
 
-for name in lista:
-    print(name)
+# names = ["Ulai", "Dante", "Sara", "Natali"]
+# eges = ["27", "1", "59", "28"]
+#
+# for (i, name) in enumerate(names):
+#     for (j, age) in enumerate(eges):
+#         if i == j:
+#             print(name, age)
+
+
+# dog = Heritage.Dog("Caramelo", "Guau! Guau!")
+# dog.greeting()
+# cat = Heritage.Cat("Norris", "Miau! Miau!")
+# cat.greeting()
+# bird = Heritage.Bird("Piolin", "Pio! Pio!")
+# bird.greeting()
+
+
+# c = open('file.txt', 'w')
+# print(c.read())
+# print(c.readline())
+# for txt in c:
+#     print(txt)
+# c.write("\nananananananananana")
+# c.close()
+#
+# x = open('file.txt')
+#
+# print(x.read())
+
+if os.path.exists('file.txt'):
+    os.remove('file.txt')
+else:
+    print('The file not exist')
